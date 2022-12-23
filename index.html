@@ -1,7 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>Abhinav Bajpai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 2px;
+  text-align: center;
+  background: #bc1a3a;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 30px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div class="header">
+  <h1>Abhinav Bajpai</h1>
+  <p><b></b></p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>  
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5></h5>
+    <div style="height:150px;"><img src="https://abbajpai.pages.iu.edu/Abhinav_Bajpai.jpg" width="140" height="140" alt=""/></div>
+    <p><font face = "Helvetica" size = "3"><b>Hi</b></font>, <font face = "Helvetica" size = "2"> my career spanning over 12 years has involved working on analytical projects of varying complexity and scale for clients in different industries. In my previous role as a Manager with Deloitte, I was part of model risk management team and mostly focused on developing and validating credit risk models for top banks in the world. Moreover, I have worked on data analytics projects related to Anti-Money Laundering, Cyber Risk, Safety Recall, Fraud Investigations, Portfolio Valuation and Working Capital Optimization.</font></p> 
+	<p><font face = "Helvetica" size = "2">I am currently pursuing a full-time master's degree in Data Science at Indiana University. I am also collaborating with researchers at Lu Laboratory, developing high-performance computing workflows for their ongoing neuroscience research projects.</font></p>  
+	<p></p>
+	  <h4><font face = "Helvetica">Get in touch</font></h4>
+	  <p>	
+	  <address><font face = "Helvetica" size = "3">
+		3319 John Hinkle Place<br>
+		Bloomington IN - 47408<br><br>
+		<a href= "mailto:abhi.adroit@gmail.com">abhi.adroit@gmail.com</a><br>
+		<a href="tel:+1 812-803-5147">+1 (812) - 803 - 5147</a><br>  		  
+		  </font>
+	  </address>
+	  </p>
+  </div>
+  <div class="main">
+    	<section><h2><b><font face = "Helvetica">Academic Projects - Indiana University</font></b></h2></section>
+		<li>
+			<a href="https://abbajpai.pages.iu.edu/voc.pdf">Voice of Customer - A Text Mining Application To Understand The Opinions Of Cellphone Users In The US Market </a>
+		<p></p>
+		</li>
+		<li>
+			<a href="https://abbajpai.pages.iu.edu/collusive_fraud%20.pdf">A Network Analysis Approach to Detect Collusive Fraud in Procurement Process </a>
+			<p></p>
+		</li>
+		<li>
+			<a href="https://abbajpai.pages.iu.edu/Imbalanced_Datasets.pdf">Machine Learning For Imbalanced Dataset: Predicting Company Bankruptcy</a>
+			<p></p>
+		</li>
+		<li>
+			<a href="https://www.youtube.com/watch?v=q_1MIyxEZTc">Global Land Temperature Anomalies and GDP Growth</a>
+			<p></p>
+		</li>	
+		<li>
+			<a href="https://abbajpai.pages.iu.edu/CHI_Specification_Document.pdf">Christel House International - MIS Specification Document</a>
+			<p></p>
+		</li>
+		<section><h2><b><font face = "Helvetica">Activities and Awards</font></b></h2></section>
+		<li>Innovation Award - Innovation Story Published on CEO's Weekly Review, Deloitte, 2019</li><p></p>
+	  	<li>Outstanding Performance Award, Deloitte 2019</li><p></p>
+	  	<li>Award for Excellent Customer Service, Deloitte, 2018</li><p></p>
+	  	<li>Applause Award for Excellent Performance, Deloitte, 2017</li><p></p>
+	  	<li>Awarded $3000 for Excellent Performance by bank client, Deloitte, 2017</li><p></p>
+	   	<li>Team Synergy Award, Genpact, 2013</li><p></p>
+	    <li>Spark Award for seamless contribution to other teams and projects, Genpact, 2012</li><p></p>
+	    <li>Performance Excellence Award for Q4-2013, Q1-2013, and Q4-2012, Genpact</li><p></p>
+	    <li>Young Achiever - Best Summer Project, Amity International Business School, 2009</li><p></p>
+	    <li>Coached, mentored, and provided training to professionals on SAS, Python, Advanced Excel, and Automation Skills, Deloitte, 2014 - 2021</li><p></p>
+	    <li>Active member of Project Management Institute, US (2013 - Present)</li><p></p>
+	    <li>Merit of being Ex-cadet of prestigious National Defense Academy (N.D.A. Service -Army) 2004-2005</li><p></p>    
+	  	
+  </div>
+  
+</div>
 </body>
 </html>
